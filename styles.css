@@ -7,7 +7,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding: 3.5em;
+    scroll-padding: 8vh;
 }
 
 body {
@@ -80,6 +80,19 @@ nav {
     width: 26px;
     margin: 5px;
     background-color: var(--text-color);
+    transition:transform 0.3s;
+}
+
+.burger-close .line1 {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.burger-close .line2 {
+    opacity: 0;
+}
+
+.burger-close .line3 {
+    transform: translateY(-7px) rotate(-45deg);
 }
 
 section {
@@ -98,14 +111,14 @@ section {
 }
 
 .history-section {
-    padding-top: 3em;
-    padding-bottom: 5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 .history-section iframe {
     display: block;
     width: 100%;
-    margin-top: 1em;
+    padding-top: 1em;
     margin-left: auto;
     margin-right: auto;
     
@@ -144,17 +157,18 @@ section {
 }
 
 .footer-section {
-    height: 20vh;
+    height: 30vh;
     width: 100%;
     background-color: var(--primary-color);
 }
 
 .footer-section h1 {
+    text-align: center;
     letter-spacing: 2px;
     text-transform: uppercase;
     font-family: 'Times New Roman', Times, serif;
     color: white;
-    padding-top: 2em;
+    padding-top: 3em;
 }
 
 @media only screen and (min-width: 992px) {
