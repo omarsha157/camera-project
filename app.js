@@ -23,3 +23,5 @@ function navClose() {
 navSlide();
 
 navClose();
+
+console.log('simple project');
